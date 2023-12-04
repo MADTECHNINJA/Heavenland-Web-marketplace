@@ -1,0 +1,119 @@
+body {
+    @apply bg-indigo-950 text-white;
+}
+
+main#appMain {
+    @apply relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+textarea:focus,
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+*:focus {
+    outline: none;
+}
+
+#jupiter-terminal .text-white\/30 {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+}
+
+#jupiter-terminal .bg-\[\#25252D\] {
+    @apply bg-gradient-to-r from-indigo-800 to-indigo-920 !important;
+}
+
+#jupiter-terminal .bg-\[\#36373E\] {
+    @apply bg-gradient-to-r from-indigo-700 to-indigo-900 !important;
+}
+
+#jupiter-terminal .from-\[rgba\(252\2c 192\2c 10\2c 1\)\] {
+    @apply from-white !important
+}
+
+#jupiter-terminal .to-\[rgba\(78\2c 186\2c 233\2c 1\)\] {
+    @apply to-white !important
+}
+
+#jupiter-terminal .bg-\[\#2C2D33\] {
+    @apply bg-gradient-to-r from-indigo-920 to-indigo-930 !important;
+}
+
+#jupiter-terminal .bg-jupiter-bg {
+    @apply bg-gradient-to-r from-indigo-800 to-indigo-920 !important;
+}
+
+#jupiter-terminal .bg-\[\#191B1F\] {
+    @apply bg-gradient-to-r from-indigo-700 to-indigo-900 !important;
+}
+
+#jupiter-terminal .bg-\[\#292A33\] {
+    @apply bg-indigo-920 !important;
+}
+
+/*search button*/
+#jupiter-terminal .bg-\[\#212128\] {
+    @apply bg-indigo-930 !important;
+}
+
+#jupiter-terminal .rounded-xl {
+    @apply rounded-lg !important;
+}
+
+/*disconenect button*/
+#jupiter-terminal .bg-black {
+    @apply bg-indigo-920 !important;
+}
+
+main#appMain:not(.withoutBg)::before {
+    content: '';
+    background: url('assets/bg3.jpg') center center;
+    background-size: cover;
+    @apply fixed top-0 right-0 left-0 bottom-0 opacity-20 -z-10;
+}
+
+.text-justify-center {
+    text-align: justify;
+    text-align-last: center;
+}
+
+#__nuxt .hyperlink {
+    @apply text-indigo-300 underline underline-offset-2;
+}
+
+#__nuxt {
+    @apply relative min-h-screen pb-10;
+}
+
+.custom-scrollbar {
+    scrollbar-width: auto;
+    scrollbar-color: #001540 transparent;
+}
+
+/* Chrome, Edge, and Safari */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    border: 0;
+}
+
+@media (min-width: 521px) {
+    .custom-scrollbar-hidden {
+        @apply overflow-hidden;
+        scrollbar-width: 0;
+    }
+}

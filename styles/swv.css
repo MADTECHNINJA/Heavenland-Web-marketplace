@@ -1,0 +1,57 @@
+#__nuxt .swv-dropdown,
+#__nuxt .swv-dropdown .swv-button,
+#__nuxt .swv-dropdown .swv-dropdown-list {
+    @apply w-full;
+}
+
+#__nuxt .swv-button {
+    @apply w-full h-11 md:h-9 rounded-md
+}
+
+#__nuxt .swv-button p {
+    @apply text-sm
+}
+
+#__nuxt .swv-button-trigger {
+    @apply bg-indigo-930;
+}
+
+#__nuxt .swv-button-trigger:hover {
+    @apply bg-indigo-700;
+}
+
+body .swv-modal-wrapper, body .swv-modal-button-close {
+    @apply bg-indigo-950 text-gray-300;
+}
+
+body .swv-modal-button-close:hover {
+    @apply text-gray-500
+}
+
+body .swv-modal-wrapper .swv-button:not([disabled]):hover {
+    @apply bg-indigo-930
+}
+
+body .swv-modal-wrapper .swv-button {
+    @apply text-gray-400
+}
+
+body .swv-modal-overlay {
+    @apply bg-indigo-940/80
+}
+
+#__nuxt .swv-dropdown-list {
+    @apply text-white bg-indigo-920
+}
+
+#__nuxt .swv-dropdown-list-item:not([disabled]):hover {
+    @apply bg-indigo-930
+}
+
+#__nuxt .connected .swv-button.swv-button-trigger {
+    @apply bg-indigo-930 bg-none transition-none hover:brightness-100;
+}
+
+#__nuxt .swv-button.swv-button-trigger {
+    @apply bg-gradient-to-r from-indigo-700 to-indigo-900 transition hover:brightness-125;
+}
